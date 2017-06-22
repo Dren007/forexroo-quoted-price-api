@@ -1,0 +1,32 @@
+{
+    "apiDefinitions": [
+        {
+            "comment": "实时报价 - 查询",
+            "javaClassName": "QuotedPrice_Query_Api",
+            "requestDefinition": {
+                "fieldDefinitions": [
+                    { "comment": "品种", "javaType": "String", "name": "symbol", "required": true }
+                ]
+            },
+            "responseDefinition": {
+                "fieldDefinitions": [
+                    { "comment": "买入价", "javaType": "String", "name": "bid", "required": true }
+                ]
+            }
+        }
+    ],
+    "comment": "forexroo-quoted-price-api-document",
+    "description": "小提示：利用浏览器搜索功能Ctrl+F可快速定位API接口，短关键字搜索范围大，长关键字搜索结果精确、接口名、接口描述、参数名、参数描述、响应字段名、响应字段描述等都可作为搜索关键字<br/>每个接口都已定义快速跳转书签，点击超链接即可跳转，跳转后URL末尾会添加路径名做区分，可添加该URL到浏览器书签，以便下次打开时自动定位到该接口",
+    "errorCodeDefinitions": [
+        { "code": 1012, "message": "MT4中间件错误", "name": "mt4_middleware_error" }
+    ],
+    "javaPackageName": "com.github.xuzw.forexroo_quoted_price_api.api",
+    "modelDefinitions": [
+    ],
+    "serverAddressDefinition": {
+        "host": "host",
+        "port": 0,
+        "url": "url"
+    },
+    "version": "v0.0.1"
+}
